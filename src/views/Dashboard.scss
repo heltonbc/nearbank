@@ -1,6 +1,10 @@
 @import "../variables";
 
 .dashboard {
+    @media screen and (min-width: 992px) {
+        height: calc(100vh - 15.3rem);
+    }
+
     &__user-avatar {
         position: relative;
     }
