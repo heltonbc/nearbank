@@ -19,10 +19,34 @@
     &__button {
         color: $color-primary;
         text-decoration: none;
+        margin-bottom: 0.5rem;
         &:hover,
-        &--active {
+        &:focus,
+        &--active,
+        &--active:hover {
+            text-decoration: none;
+        }
+
+        &:hover,
+        &--active,
+        &--active:hover {
             color: #fff;
+        }
+
+        &:hover {
+            background-color: $color-muted;
+        }
+
+        &--active,
+        &--active:hover {
             background-color: $color-primary;
         }
     }
+}
+
+a.dashboard__link,
+a.dashboard__link:active,
+a.dashboard__link:focus,
+a.dashboard__link:hover {
+    text-decoration: none;
 }

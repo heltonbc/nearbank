@@ -1,25 +1,38 @@
-import React from "react";
-import { Container, Row, Col, Button, Table, Tab, Tabs } from "react-bootstrap";
+import React, { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCircle } from "@fortawesome/free-solid-svg-icons";
+import AccountBalance from "../components/AccountBalance";
+
 import "./Dashboard.scss";
 
-const Dashboard = () => {
-    const latestData = [
-        { date: "22/07", description: "SAQUE 24H 012345", value: "300,00" },
-        { date: "21/07", description: "SUPERMERCADO 2312332", value: "523,00" },
-        { date: "21/07", description: "ESTACIONAMENTO 123234", value: "20,00" },
-        { date: "21/07", description: "PAGAMENTO ALUGUEL 123432", value: "1.300,00" },
+const Dashboard = ({ className = false }) => {
+    const [activeLink, setActiveLink] = useState(0);
+
+    const links = [
+        { text: "Minha Conta", path: "/dashboard", exact: true },
+        { text: "Pagamentos", path: "dashboard/payments" },
+        { text: "Extrato", path: "/dashboard/history" },
     ];
 
-    const futureData = [
-        { date: "22/08", description: "SALARIO 012345", value: "3000,00" },
-        { date: "21/08", description: "PARC10/30 2312332", value: "523,00" },
-        { date: "21/08", description: "FARMACIA 123234", value: "120,00" },
-    ];
+    const data = {
+        latestBalance: [
+            { date: "22/07", description: "SAQUE 24H 012345", value: "300,00" },
+            { date: "21/07", description: "SUPERMERCADO 2312332", value: "523,00" },
+            { date: "21/07", description: "ESTACIONAMENTO 123234", value: "20,00" },
+            { date: "21/07", description: "PAGAMENTO ALUGUEL 123432", value: "1.300,00" },
+        ],
+
+        futureBalance: [
+            { date: "22/08", description: "SALARIO 012345", value: "3000,00" },
+            { date: "21/08", description: "PARC10/30 2312332", value: "523,00" },
+            { date: "21/08", description: "FARMACIA 123234", value: "120,00" },
+        ],
+    };
 
     return (
-        <Container className="dashboard py-5">
+        <Container className={`dashboard py-5 ${className ? className : ""}`}>
             <Row>
                 <Col xs={12} lg={4}>
                     <Row className="d-flex align-items-center mb-5">
@@ -44,97 +57,27 @@ const Dashboard = () => {
                             <p className="text-muted">ag: 1234 c/c: 4321-5</p>
                         </Col>
                     </Row>
-                    <div className="d-grid gap-2">
-                        <Button
-                            className="dashboard__button dashboard__button--active text-start"
-                            variant="link"
-                            size="lg"
-                        >
-                            Minha Conta
-                        </Button>
-                        <Button
-                            className="dashboard__button text-start"
-                            variant="link"
-                            size="lg"
-                        >
-                            Pagamento
-                        </Button>
-                        <Button
-                            className="dashboard__button text-start"
-                            variant="link"
-                            size="lg"
-                        >
-                            Extrato
-                        </Button>
-                    </div>
+                    {links.map(({ text, path }, key) => (
+                        <Link className="dashboard__link d-block" to={path} key={key}>
+                            <Button
+                                className={`dashboard__button text-left' ${
+                                    key === activeLink ? "dashboard__button--active" : ""
+                                }`}
+                                variant="link"
+                                size="lg"
+                                block
+                                onClick={() => setActiveLink(key)}
+                            >
+                                {text}
+                            </Button>
+                        </Link>
+                    ))}
                 </Col>
-
-                <Col xs={12} lg={3} className="mt-lg-5 pt-lg-4">
-                    <h2 className="my-5">Conta corrente</h2>
-                    <h6>
-                        <strong>Saldo em conta corrente</strong>
-                    </h6>
-                    <h4 className="mb-4 text-success">
-                        <small>R$</small> 3.450<small>,00</small>
-                    </h4>
-                    <h6 className="mb-3">
-                        <strong>Cheque Especial</strong>
-                    </h6>
-                    <h6 className="mb-0">Limite disponível</h6>
-                    <h6>R$ 5.000,00</h6>
-                    <Button className="mt-4" variant="secondary" size="sm">
-                        Ver Extrato
-                    </Button>
-                </Col>
-
-                <Col xs={12} lg={5} className="mt-lg-5 pt-lg-5">
-                    <Tabs
-                        className="mt-5 pt-lg-4"
-                        defaultActiveKey="home"
-                        id="uncontrolled-tab-example"
-                    >
-                        <Tab eventKey="home" title="Últimos lançamentos">
-                            <Table borderless hover striped>
-                                <thead>
-                                    <tr>
-                                        <th>Data</th>
-                                        <th>Descrição</th>
-                                        <th className="text-end">Valor (R$)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {latestData.map(({ date, description, value }) => (
-                                        <tr>
-                                            <td>{date}</td>
-                                            <td>{description}</td>
-                                            <td className="text-end">{value}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </Table>
-                        </Tab>
-                        <Tab eventKey="profile" title="Lançamentos futuros">
-                            <Table borderless hover striped>
-                                <thead>
-                                    <tr>
-                                        <th>Data</th>
-                                        <th>Descrição</th>
-                                        <th className="text-end">Valor (R$)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {futureData.map(({ date, description, value }) => (
-                                        <tr>
-                                            <td>{date}</td>
-                                            <td>{description}</td>
-                                            <td className="text-end">{value}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </Table>
-                        </Tab>
-                    </Tabs>
-                </Col>
+                <Routes>
+                    <Route path="/" element={<AccountBalance data={data} />} />
+                    <Route path="payments" element={<Dashboard />} />
+                    <Route path="history" />
+                </Routes>
             </Row>
         </Container>
     );
