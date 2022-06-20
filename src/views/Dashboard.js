@@ -3,17 +3,20 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCircle } from "@fortawesome/free-solid-svg-icons";
+
 import AccountBalance from "../components/AccountBalance";
+import AccountPayments from "../components/AccountPayments";
+import AccountHistory from "../components/AccountHistory";
 
 import "./Dashboard.scss";
 
-const Dashboard = ({ className = false }) => {
+const Dashboard = () => {
     const [activeLink, setActiveLink] = useState(0);
 
     const links = [
-        { text: "Minha Conta", path: "/dashboard", exact: true },
-        { text: "Pagamentos", path: "dashboard/payments" },
-        { text: "Extrato", path: "/dashboard/history" },
+        { text: "Minha conta", path: "/dashboard", exact: true },
+        { text: "Pagamentos", path: "payments" },
+        { text: "Extrato", path: "history" },
     ];
 
     const data = {
@@ -29,10 +32,12 @@ const Dashboard = ({ className = false }) => {
             { date: "21/08", description: "PARC10/30 2312332", value: "523,00" },
             { date: "21/08", description: "FARMACIA 123234", value: "120,00" },
         ],
+
+        history: ["Histórico 1", "Histórico 2"],
     };
 
     return (
-        <Container className={`dashboard py-5 ${className ? className : ""}`}>
+        <Container className="dashboard py-5">
             <Row>
                 <Col xs={12} lg={4}>
                     <Row className="d-flex align-items-center mb-5">
@@ -75,8 +80,10 @@ const Dashboard = ({ className = false }) => {
                 </Col>
                 <Routes>
                     <Route path="/" element={<AccountBalance data={data} />} />
-                    <Route path="payments" element={<Dashboard />} />
-                    <Route path="history" />
+
+                    <Route path="/payments" element={<AccountPayments />} />
+
+                    <Route path="/history" element={<AccountHistory data={data} />} />
                 </Routes>
             </Row>
         </Container>
