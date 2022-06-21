@@ -33,7 +33,74 @@ const Dashboard = () => {
             { date: "21/08", description: "FARMACIA 123234", value: "120,00" },
         ],
 
-        history: ["Histórico 1", "Histórico 2"],
+        history: [
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+                value: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+                value: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+                value: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+                value: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+                value: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALARIO 012345",
+
+                balance: "3000,00",
+            },
+            {
+                date: "22/08",
+                description: "SALDO DO DIA",
+                balance: "3000,00",
+            },
+        ],
     };
 
     return (
