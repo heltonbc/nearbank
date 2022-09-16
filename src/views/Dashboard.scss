@@ -2,7 +2,7 @@
 
 .dashboard {
     @media screen and (min-width: 992px) {
-        height: calc(100vh - 15.3rem);
+        min-height: calc(100vh - 12.25rem);
     }
 
     &__user-avatar {
@@ -20,6 +20,7 @@
         color: $color-primary;
         text-decoration: none;
         margin-bottom: 0.5rem;
+
         &:hover,
         &:focus,
         &--active,
@@ -41,6 +42,14 @@
         &--active:hover {
             background-color: $color-primary;
         }
+    }
+
+    a.nav-item.nav-link {
+        color: $color-primary;
+    }
+
+    a.nav-item.nav-link.active {
+        color: $color-muted;
     }
 }
 

@@ -9,11 +9,13 @@ import posts from "../data/posts";
 
 const Home = ({ handleClick }) => (
     <>
-        <Hero onClick={() => handleClick(true)} /> {/* setShowModal/handleClick */}
+        <Hero />
+
         <CreditCard />
         <CardList posts={posts} />
-        <CenteredButton onClick={handleClick}>Abra sua Conta</CenteredButton>
-        <Institutional onClick={() => handleClick(true)} />
+        <CenteredButton onClick={handleClick}>Abra sua conta</CenteredButton>
+
+        <Institutional />
         <Faq />
     </>
 );
