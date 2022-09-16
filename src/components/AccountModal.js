@@ -1,53 +1,54 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Form, FormControl, Modal } from "react-bootstrap";
+import { Modal, Form, Button } from "react-bootstrap";
 
 const AccountModal = ({ show, handleClose, auth }) => {
-    const history = useNavigate();
+    const navigate = useNavigate();
     const [name, setName] = useState();
 
     const handleSubmit = () => {
-        auth.login(name, "12345", history.push("/dashboard"));
+        auth.login(name, "12345", navigate("/dashboard"));
         handleClose();
     };
 
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-                <Modal.Title>Abra sua Conta</Modal.Title>
+                <Modal.Title>Abra sua conta</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Form>
-                    <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Label>Seu Nome</Form.Label>
+                    <Form.Group>
+                        <Form.Label>Seu nome</Form.Label>
                         <Form.Control
                             type="text"
-                            placeholder="Seu Nome"
+                            placeholder="Seu nome"
                             value={name}
                             onChange={e => setName(e.currentTarget.value)}
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Seu Email</Form.Label>
-                        <Form.Control type="email" placeholder="Seu Email" />
+                    <Form.Group>
+                        <Form.Label>Seu email</Form.Label>
+                        <Form.Control type="email" placeholder="Seu email" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicCity">
-                        <Form.Label>Sua cidade</Form.Label>
-                        <Form.Control as="select">
-                            <option>Escolha a Cidade</option>
-                            <option value="1">Cuiabá - MT</option>
-                            <option value="2">Florianópolis - SC</option>
-                            <option value="3">São Paulo - SP</option>
-                            <option value="3">Curitiba - PR</option>
+                    <Form.Group>
+                        <Form.Label className="my-1 mr-2" htmlFor="formCitySelect">
+                            Preference
+                        </Form.Label>
+                        <Form.Control as="select" className="my-1 mr-sm-2" custom="true">
+                            <option value="0">Florianópolis - SC</option>
+                            <option value="1">Curitiba - PR</option>
+                            <option value="2">São Paulo - SP</option>
+                            <option value="3">Rio de Janeiro - RJ</option>
                         </Form.Control>
+                    </Form.Group>
 
+                    <Form.Group>
                         <Form.Check
                             type="checkbox"
-                            id="custom-checkbox"
-                            label="Eu li e concordo com os termos de uso"
-                            className="m-3"
+                            label="Eu li e concordo com os termos de uso."
                         />
                     </Form.Group>
                 </Form>

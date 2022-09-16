@@ -4,18 +4,18 @@ import logo from "../assets/logo__magic-pay--mobile.png";
 import logoDesktop from "../assets/logo__magic-pay.png";
 import "./Hero.scss";
 
-const Hero = ({ onClick }) => (
+const Hero = () => (
     <Card className="text-center text-light hero">
         <Row className="my-lg-5">
-            <Col lg className="text-lg-end my-5">
-                <Image className="d-lg-none" src={logo} />
+            <Col lg className="text-lg-end mt-5">
+                <Row>
+                    <Image className="d-lg-none" src={logo} />
+                </Row>
                 <Image className="d-none d-lg-inline-block" src={logoDesktop} />
             </Col>
             <Col lg className="text-lg-start my-5">
-                <p>Pague suas contas pelo nosso App</p>
-                <Button variant="outline-light" onClick={onClick}>
-                    Abra sua Conta
-                </Button>
+                <p>Pague suas contas pelo nosso APP</p>
+                <Button variant="outline-light">Abra sua conta</Button>
             </Col>
         </Row>
     </Card>

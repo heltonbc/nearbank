@@ -20,7 +20,7 @@ const Dashboard = ({ className = false, name, account }) => {
     ];
     const data = {
         latestBalance: [
-            { date: "22/07", description: "POSTO COMBÚSTIVEL", value: "200,00" },
+            { date: "22/07", description: "POSTO COMBUSTÍVEL", value: "200,00" },
             { date: "22/07", description: "SAQUE 24H 012345", value: "300,00" },
             { date: "21/07", description: "MERCADO 02323626", value: "275,00" },
             { date: "20/07", description: "NETFLIX 235236", value: "59,00" },
@@ -28,7 +28,7 @@ const Dashboard = ({ className = false, name, account }) => {
         ],
 
         futureBalance: [
-            { date: "22/07", description: "POSTO COMBÚSTIVEL", value: "200,00" },
+            { date: "22/07", description: "POSTO COMBUSTÍVEL", value: "200,00" },
             { date: "22/07", description: "SAQUE 24H 012345", value: "300,00" },
             { date: "21/07", description: "MERCADO 02323626", value: "275,00" },
             { date: "20/07", description: "NETFLIX 235236", value: "59,00" },

@@ -1,4 +1,4 @@
-import React, { useState /* useEffect */ } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import IconText from "./IconText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,14 +8,14 @@ import {
     faShieldAlt,
     faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
+
 import "./Faq.scss";
-/* import { icon } from "@fortawesome/fontawesome-svg-core";
- */
+
 const Faq = () => {
     const options = [
-        { icon: faCreditCard, text: "Cartão de Crédito" },
-        { icon: faWallet, text: "Conta e Abertura" },
-        { icon: faShieldAlt, text: "Token Digital" },
+        { icon: faCreditCard, text: "Cartão de crédito" },
+        { icon: faWallet, text: "Conta e abertura" },
+        { icon: faShieldAlt, text: "Token digital" },
         { icon: faUserTie, text: "Produtos e Serviços" },
     ];
 
@@ -28,10 +28,10 @@ const Faq = () => {
     return (
         <section className="faq text-light">
             <Container className="py-5">
-                <Row className="text-center" /* alternativa justify-content-center */>
+                <Row className="justify-content-center">
                     <h2 className="faq-title my-5">Dúvidas frequentes</h2>
                 </Row>
-                <Row className="d-flex align-items-center justify-content-center">
+                <Row className="d-flex align-items-center justify-items-center">
                     <Col className="d-lg-none mb-5" xs={12}>
                         <Row>
                             {options.map(({ icon }, key) => (
@@ -45,7 +45,7 @@ const Faq = () => {
                                 </Col>
                             ))}
                         </Row>
-                        <Row className="text-center mt-4">
+                        <Row className="justify-content-center mt-5">
                             <p className="lead">{options[index].text}</p>
                         </Row>
                     </Col>
@@ -69,70 +69,75 @@ const Faq = () => {
                     <Col>
                         <Accordion defaultActiveKey="0" activeKey={`${index}`}>
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header className="accordion--header">
-                                    Accordion Item #1
+                                <Accordion.Header>
+                                    {" "}
+                                    Lorem ipsum dolor sit amet
                                 </Accordion.Header>
                                 <Accordion.Body className="accordion--bg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    elit. Nullam tincidunt arcu vel arcu fermentum, eget
+                                    accumsan dolor dignissim. Nam eget quam semper, varius
+                                    ligula sed, auctor augue. Maecenas et porta magna.
+                                    Nulla mattis tortor vitae metus vestibulum
+                                    scelerisque. Ut mollis a nisl vel suscipit. Curabitur
+                                    scelerisque placerat ultrices. Proin purus ante,
+                                    congue vel arcu ac, porta condimentum mauris. Maecenas
+                                    massa orci, fringilla eget fermentum nec, dignissim
+                                    nec diam.
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header className="accordion--header">
-                                    Accordion Item #2
+                                    Nulla porttitor eros ac ex tristique posuere
                                 </Accordion.Header>
                                 <Accordion.Body className="accordion--bg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    elit. Nullam tincidunt arcu vel arcu fermentum, eget
+                                    accumsan dolor dignissim. Nam eget quam semper, varius
+                                    ligula sed, auctor augue. Maecenas et porta magna.
+                                    Nulla mattis tortor vitae metus vestibulum
+                                    scelerisque. Ut mollis a nisl vel suscipit. Curabitur
+                                    scelerisque placerat ultrices. Proin purus ante,
+                                    congue vel arcu ac, porta condimentum mauris. Maecenas
+                                    massa orci, fringilla eget fermentum nec, dignissim
+                                    nec diam.
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header className="accordion--header">
-                                    Accordion Item #3
+                                <Accordion.Header>
+                                    Quisque fringilla tincidunt arcu
                                 </Accordion.Header>
                                 <Accordion.Body className="accordion--bg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    elit. Nullam tincidunt arcu vel arcu fermentum, eget
+                                    accumsan dolor dignissim. Nam eget quam semper, varius
+                                    ligula sed, auctor augue. Maecenas et porta magna.
+                                    Nulla mattis tortor vitae metus vestibulum
+                                    scelerisque. Ut mollis a nisl vel suscipit. Curabitur
+                                    scelerisque placerat ultrices. Proin purus ante,
+                                    congue vel arcu ac, porta condimentum mauris. Maecenas
+                                    massa orci, fringilla eget fermentum nec, dignissim
+                                    nec diam.
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header className="accordion--header">
-                                    Accordion Item #4
+                                <Accordion.Header>
+                                    Nam elementum lobortis purus a maximus tortor
                                 </Accordion.Header>
                                 <Accordion.Body className="accordion--bg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    elit. Nullam tincidunt arcu vel arcu fermentum, eget
+                                    accumsan dolor dignissim. Nam eget quam semper, varius
+                                    ligula sed, auctor augue. Maecenas et porta magna.
+                                    Nulla mattis tortor vitae metus vestibulum
+                                    scelerisque. Ut mollis a nisl vel suscipit. Curabitur
+                                    scelerisque placerat ultrices. Proin purus ante,
+                                    congue vel arcu ac, porta condimentum mauris. Maecenas
+                                    massa orci, fringilla eget fermentum nec, dignissim
+                                    nec diam.
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
