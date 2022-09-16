@@ -27,7 +27,7 @@ const CreditCard = () => (
                         <IconText
                             icon={faCreditCard}
                             size={2}
-                            color="#f05656"
+                            color="#CF7500"
                             textClassName="h5 text-muted"
                         >
                             Crédito Pessoal
@@ -37,7 +37,7 @@ const CreditCard = () => (
                         <IconText
                             icon={faMobile}
                             size={2}
-                            color="#f05656"
+                            color="#CF7500"
                             textClassName="h5 text-muted"
                         >
                             APP
@@ -47,7 +47,7 @@ const CreditCard = () => (
                         <IconText
                             icon={faShoppingCart}
                             size={2}
-                            color="#f05656"
+                            color="#CF7500"
                             textClassName="h5 text-muted"
                         >
                             Pagamentos Online
@@ -57,7 +57,7 @@ const CreditCard = () => (
                         <IconText
                             icon={faWallet}
                             size={2}
-                            color="#f05656"
+                            color="#CF7500"
                             textClassName="h5 text-muted"
                         >
                             Pagamento Digital

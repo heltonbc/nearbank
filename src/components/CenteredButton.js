@@ -6,7 +6,8 @@ const CenteredButton = ({ children, onClick }) => (
         <Row>
             <div className="d-flex justify-content-center">
                 <Button
-                    className="my-5 px-5 py-3"
+                    color="#fff"
+                    className="my-5 px-5 py-3 buttoncolor"
                     variant="success"
                     size="lg"
                     onClick={onClick}
