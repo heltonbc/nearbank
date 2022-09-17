@@ -57,7 +57,7 @@ const Faq = () => {
                                 size={3}
                                 className="faq-clickable mb-3"
                                 textClassName="lead"
-                                color={key === index ? "#FFF" : "#BBB"}
+                                color={key === index ? "#FFF" : "#F0A500"}
                                 onClick={() => handleClick(key)}
                                 key={key}
                             >

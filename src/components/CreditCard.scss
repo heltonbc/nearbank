@@ -1,7 +1,7 @@
 @import "../variables";
 
 .credit-card-title {
-    color: $color-primary;
+    color: $color-title;
     font-size: 2.2rem;
     font-weight: 300;
     line-height: 1.2;
@@ -9,4 +9,13 @@
     @media screen and (min-width: 992px) {
         font-size: 3.5rem;
     }
+}
+
+.imghover:hover :hover {
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
 }

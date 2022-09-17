@@ -7,10 +7,10 @@ import {
     faWallet,
 } from "@fortawesome/free-solid-svg-icons";
 import IconText from "./IconText";
-import simplecardfront from "../assets/simplecardfront.svg";
-import simplecardback from "../assets/simplecardback.svg";
-import blackcardfront from "../assets/blackcardfront.svg";
-import blackcardback from "../assets/blackcardback.svg";
+import simplecardfront from "../assets/simplecardfront.png";
+import simplecardback from "../assets/simplecardback.png";
+import blackcardfront from "../assets/blackcardfront.png";
+import blackcardback from "../assets/blackcardback.png";
 import "./CreditCard.scss";
 
 const CreditCard = () => (
@@ -22,7 +22,7 @@ const CreditCard = () => (
                         <strong>Cartão de crédito e Débido</strong>
                     </h2>
                 </Row>
-                <Row>
+                <Row className="hovereffect">
                     <Col xs={12} lg={3} className="mb-4">
                         <IconText
                             icon={faCreditCard}
@@ -67,16 +67,16 @@ const CreditCard = () => (
             </Col>
         </Row>
         <Row className="justify-content-center">
-            <Col xs={12} lg={3}>
+            <Col className="imghover" xs={12} lg={3}>
                 <Image src={simplecardfront} alt="nearbank Credit Card Example" fluid />
             </Col>
-            <Col xs={12} lg={3}>
+            <Col className="imghover" xs={12} lg={3}>
                 <Image src={simplecardback} alt="nearbank Credit Card Example" fluid />
             </Col>
-            <Col xs={12} lg={3}>
+            <Col className="imghover" xs={12} lg={3}>
                 <Image src={blackcardfront} alt="nearbank Credit Card Example" fluid />
             </Col>
-            <Col xs={12} lg={3}>
+            <Col className="imghover" xs={12} lg={3}>
                 <Image src={blackcardback} alt="nearbank Credit Card Example" fluid />
             </Col>
         </Row>

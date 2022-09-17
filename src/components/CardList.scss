@@ -2,4 +2,23 @@
 
 .buttoncolor {
     background-color: $color-CF7500;
+    border: none;
+}
+
+button:hover {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -6px);
+    }
+    100% {
+        transform: translate(0%, 0);
+    }
 }
