@@ -4,7 +4,7 @@ import logo from "../assets/logoNearbankMobile.png";
 import logoDesktop from "../assets/logoNearbankDesktop.png";
 import "./Hero.scss";
 
-const Hero = () => (
+const Hero = ({ children, onClick }) => (
     <Card className="text-center text-light hero">
         <Row className="my-lg-5">
             <Col lg className="text-lg-end mt-5">
@@ -13,7 +13,9 @@ const Hero = () => (
             </Col>
             <Col lg className="text-lg-start my-5">
                 <p>Pague suas contas pelo nosso APP</p>
-                <Button variant="outline-light">Abra sua conta</Button>
+                <Button variant="outline-light" onClick={onClick}>
+                    {children}
+                </Button>
             </Col>
         </Row>
     </Card>

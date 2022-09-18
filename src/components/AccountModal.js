@@ -54,10 +54,14 @@ const AccountModal = ({ show, handleClose, auth }) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+                <Button variant="secondary" onClick={handleClose} className="buttoncolor">
                     Cancelar
                 </Button>
-                <Button variant="primary" onClick={handleSubmit}>
+                <Button
+                    variant="secondary"
+                    onClick={handleSubmit}
+                    className="buttoncolor"
+                >
                     Criar Conta
                 </Button>
             </Modal.Footer>
