@@ -12,6 +12,7 @@ import applestore from "../assets/applestore.png";
 import googleplay from "../assets/googleplay.png";
 
 import "./Footer.scss";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => (
     <footer className="footer">

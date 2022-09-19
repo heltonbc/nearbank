@@ -9,8 +9,7 @@ import posts from "../data/posts";
 
 const Home = ({ handleClick }) => (
     <>
-        <Hero onClick={handleClick}>Abra sua conta</Hero>
-
+        <Hero onClick={handleClick}>Continuar</Hero>
         <CreditCard />
         <CardList posts={posts} />
         <CenteredButton onClick={handleClick}>Abra sua conta</CenteredButton>

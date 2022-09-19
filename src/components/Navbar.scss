@@ -5,11 +5,11 @@
     border-bottom: 0.2rem solid $color-secondary;
 
     a.dropdown-toggle.nav-link {
-        color: #fff;
+        color: #fff !important;
     }
 
     a.dropdown-toggle.nav-link:hover {
-        color: #212529;
+        color: #212529 !important;
     }
 
     &__search-group {
@@ -17,6 +17,12 @@
     }
 }
 
-.nav-link {
+a.nav-link {
     color: #f4f4f4 !important;
+    &:hover {
+        color: #f0a500 !important;
+    }
+}
+div.dropdown-menu.show {
+    background: #212529;
 }
