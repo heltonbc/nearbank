@@ -30,7 +30,7 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
                         <img
                             src={logo}
                             height="30"
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top logo-height"
                             alt="Magbank logo"
                         />
                     </Link>

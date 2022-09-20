@@ -1,7 +1,7 @@
 @import "../variables";
 
 .faq {
-    background-color: $color-faq-background;
+    background-color: $color-primary;
 
     .accordion-body {
         background-color: $color-faq-background;
@@ -48,4 +48,20 @@
     100% {
         transform: translate(0%, 0);
     }
+}
+
+.faq-bg {
+    background-color: $color-primary;
+}
+
+.accordion--bg {
+    color: #fff;
+}
+
+.accordion-button {
+    background-color: #303030 !important;
+}
+
+.accordion-body {
+    background-color: #303030 !important;
 }

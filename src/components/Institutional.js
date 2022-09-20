@@ -12,9 +12,8 @@ import "./Institutional.scss";
 const Institutional = () => (
     <section className="institutional text-light py-5">
         <Container>
-            <Row>
-                <Col xs={12} lg={5} />
-                <Col xs={12} lg={7}>
+            <Row className="card-institutional">
+                <Col className="instituitional-bg" xs={12} lg={7}>
                     <h2 className="institutional-title my-5">Já nascemos digital</h2>
                     <p className="mb-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -40,7 +39,7 @@ const Institutional = () => (
                             Transações mais seguras
                         </IconText>
                     </div>
-                    <Button variant="outline-light" className="mt-5">
+                    <Button variant="outline-light" className="m-5">
                         Abra sua conta
                     </Button>
                 </Col>

@@ -1,0 +1,12 @@
+@import "../variables";
+
+.footerLinks {
+    color: $color-F4F4F4 !important;
+    text-decoration: none !important;
+    a {
+        color: $color-F4F4F4 !important;
+    }
+    a:hover {
+        color: $color-F0A500 !important;
+    }
+}

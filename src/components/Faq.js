@@ -66,7 +66,7 @@ const Faq = () => {
                         ))}
                     </Col>
 
-                    <Col>
+                    <Col className="faq-bg">
                         <Accordion defaultActiveKey="0" activeKey={`${index}`}>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>

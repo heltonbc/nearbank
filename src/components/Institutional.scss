@@ -1,18 +1,10 @@
 .institutional {
     background-size: cover;
     background-position: center;
-
-    @media only screen and (max-width: 970px) {
-        background-image: url("../assets/institutionalMobile.png");
-    }
-
-    @media only screen and (min-width: 971px) {
-        background-image: url("../assets/institutionalDesktop.png");
-        height: 650px;
-    }
+    background-image: url("../assets/Intitutional.png");
 
     &-title {
-        font-size: 2.2rem;
+        font-size: 3rem;
         font-weight: 300;
         line-height: 1.2;
 
@@ -20,4 +12,19 @@
             font-size: 3.5rem;
         }
     }
+}
+
+.instituitional-bg {
+    background: rgba(116, 116, 116, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-institutional {
+    justify-content: center;
+}
+
+div.px-2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
 }

@@ -19,7 +19,7 @@ div.hero {
 }
 
 .card-reg {
-    color: #303030 !important;
+    color: #f4f4f4 !important;
     width: 20rem;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -33,15 +33,19 @@ div.hero {
 
 .border {
     border-radius: 20px;
-    justify-content: space-between;
+    justify-content: flex-start !important;
 }
 
 .ps-5 {
-    padding-left: 11rem !important;
+    padding-left: 10rem !important;
 }
 
 .mt-5:nth-child(2) {
     @media only screen and (min-width: 992px) {
         margin-top: 20rem !important;
     }
+}
+
+.mt-5 {
+    color: #303030 !important;
 }
