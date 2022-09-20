@@ -5,7 +5,7 @@ import "./FooterLinks.scss";
 const links = [
     {
         label: "Sobre nós",
-        url: "/app",
+        url: "#FooterLinks",
     },
     {
         label: "Carreiras",
