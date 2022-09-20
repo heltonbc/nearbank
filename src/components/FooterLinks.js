@@ -9,7 +9,7 @@ const links = [
     },
     {
         label: "Carreiras",
-        url: "/Index",
+        url: "/",
     },
     {
         label: "Perguntas frequentes",
