@@ -5,7 +5,7 @@ import "./FooterLinks.scss";
 const links = [
     {
         label: "Sobre nós",
-        url: "#FooterLinks",
+        url: "#Institutional",
     },
     {
         label: "Carreiras",
@@ -13,7 +13,7 @@ const links = [
     },
     {
         label: "Perguntas frequentes",
-        url: "/#FAQ",
+        url: "/#Faq",
     },
     {
         label: "Contato",
@@ -32,11 +32,11 @@ const links = [
 const produtcs = [
     {
         label: "Conta digital",
-        url: "/Index",
+        url: "#CardList",
     },
     {
         label: "Cartão de crédito",
-        url: "/Index",
+        url: "/#CreditCard",
     },
     {
         label: "Empréstimo",
