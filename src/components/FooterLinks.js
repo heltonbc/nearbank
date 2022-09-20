@@ -13,11 +13,11 @@ const links = [
     },
     {
         label: "Perguntas frequentes",
-        url: "/Index",
+        url: "/footer",
     },
     {
         label: "Contato",
-        url: "/Index",
+        url: "/Footer",
     },
     {
         label: "Imprensa",
