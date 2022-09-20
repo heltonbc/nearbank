@@ -13,7 +13,7 @@ const links = [
     },
     {
         label: "Perguntas frequentes",
-        url: "/footer",
+        url: "/#FAQ",
     },
     {
         label: "Contato",
