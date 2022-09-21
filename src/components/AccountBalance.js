@@ -13,7 +13,7 @@ const AccountBalance = ({ data }) => {
                     </small>
                 </h6>
                 <h4 className="text-success mb-4">
-                    <small>R$ </small>3.500<small>,00</small>
+                    <small>R$ </small>6.500<small>,00</small>
                 </h4>
                 <h6>
                     <small>
