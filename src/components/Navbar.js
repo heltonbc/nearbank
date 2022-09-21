@@ -14,6 +14,7 @@ import "./Navbar.scss";
 import logo from "../assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+/* import posts from "../data/posts"; */
 
 const Navigation = ({ handleCreateAcc, logged, auth }) => {
     const navigate = useNavigate();
@@ -31,7 +32,7 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
                             src={logo}
                             height="30"
                             className="d-inline-block align-top logo-height"
-                            alt="Magbank logo"
+                            alt="nearBank logo"
                         />
                     </Link>
                 </Navbar.Brand>
@@ -59,10 +60,24 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="#cartao">Cartão</Nav.Link>
-                                <Nav.Link href="#quemsomos">Quem Somos</Nav.Link>
+                                <Nav.Link href="#creditcard">Cartão</Nav.Link>
+                                <Nav.Link href="#institutional">Quem Somos</Nav.Link>
                                 <Nav.Link href="#faq">FAQ</Nav.Link>
                             </Nav>
+
+                            <Form>
+                                <div className="navbar__search-groupOff d-none d-lg-flex">
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="O que você procura?"
+                                    />
+
+                                    <Button variant="link">
+                                        <FontAwesomeIcon icon={faSearch} color="#FFF" />
+                                    </Button>
+                                </div>
+                            </Form>
+
                             <ButtonGroup aria-label="Basic example">
                                 <Button variant="outline-light">
                                     <NavDropdown

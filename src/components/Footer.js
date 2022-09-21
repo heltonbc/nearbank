@@ -12,15 +12,23 @@ import applestore from "../assets/applestore.png";
 import googleplay from "../assets/googleplay.png";
 import FooterLinks from "../components/FooterLinks";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
     <footer className="footer">
         <Container>
             <Row className="text-center py-5 d-flex align-items-center">
                 <Col xs={12} lg={3} className="text-lg-left mb-5 mb-lg-0">
-                    <Image src={logo} />
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            height="30"
+                            className="d-inline-block align-top logo-height"
+                            alt="nearBank logo"
+                        />
+                    </Link>
                 </Col>
-                <Col xs={12} lg={6} className="mb-5 mb-lg-0">
+                <Col xs={12} lg={6} className="mb-5 mb-lg-0 jump">
                     <a
                         href="https://www.apple.com/"
                         target="_blank"
@@ -36,7 +44,7 @@ const Footer = () => (
                         <Image src={googleplay} className="ms-2" />
                     </a>
                 </Col>
-                <Col xs={12} lg={3}>
+                <Col xs={12} lg={3} className="jump">
                     <a
                         href="https://facebook.com/"
                         target="_blank"

@@ -12,3 +12,15 @@
 .iconsadjust {
     margin-right: 0.5rem !important;
 }
+
+.jump:hover :hover {
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}

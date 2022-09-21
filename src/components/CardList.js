@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./CardList.scss";
 
 const CardList = ({ posts }) => (
-    <Container>
+    <Container id="cardlist">
         <Row>
             {posts &&
                 posts.map(({ id, image, title, excerpt, action }) => (

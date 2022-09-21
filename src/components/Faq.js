@@ -26,7 +26,7 @@ const Faq = () => {
     };
 
     return (
-        <section className="faq text-light">
+        <section id="faq" className="faq text-light">
             <Container className="py-5">
                 <Row className="justify-content-center">
                     <h2 className="faq-title my-5">Dúvidas frequentes</h2>

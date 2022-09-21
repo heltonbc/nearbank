@@ -10,7 +10,7 @@ import IconText from "./IconText";
 import "./Institutional.scss";
 
 const Institutional = () => (
-    <section className="institutional text-light py-5">
+    <section id="institutional" className="institutional text-light py-5">
         <Container>
             <Row className="card-institutional">
                 <Col className="instituitional-bg" xs={12} lg={7}>

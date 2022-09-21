@@ -4,7 +4,7 @@ import { Col, Button, Tabs, Tab, Form } from "react-bootstrap";
 const AccountPayments = () => (
     <Col xs={12} lg={8} className="mt-lg-5 pt-lg-5">
         <h3 className="mt-4">Pagamentos</h3>
-        <Tabs className="mt-5 pt-lg-2" defaultActiveKey="boleto">
+        <Tabs className="pt-lg-5" defaultActiveKey="boleto">
             <Tab eventKey="boleto" title="Boleto">
                 <Form>
                     <Form.Group controlId="formBarCode" className="my-5">

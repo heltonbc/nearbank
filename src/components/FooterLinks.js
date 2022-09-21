@@ -1,212 +1,213 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./FooterLinks.scss";
+/* import AppRouter from "../components/AppRouter"; */
 
 const links = [
     {
         label: "Sobre nós",
-        url: "#Institutional",
+        url: "#institutional",
     },
     {
         label: "Carreiras",
-        url: "/",
+        url: "#routeOrID",
     },
     {
         label: "Perguntas frequentes",
-        url: "/#Faq",
+        url: "#faq",
     },
     {
         label: "Contato",
-        url: "/Footer",
+        url: "#routeOrID",
     },
     {
         label: "Imprensa",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Investidores",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const produtcs = [
     {
         label: "Conta digital",
-        url: "#CardList",
+        url: "#cardlist",
     },
     {
         label: "Cartão de crédito",
-        url: "/#CreditCard",
+        url: "#creditcard",
     },
     {
         label: "Empréstimo",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Conta PJ",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Cartão de crédito PJ",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Investimentos",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const explore = [
     {
         label: "Comunidade",
-        url: "/Index",
+        url: "#institutional",
     },
     {
         label: "Blog",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "near InvestNews",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Newsletter",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "North America",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Europe Countries",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const seeToo = [
     {
         label: "Auxílio emergencial e FGTS",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Tudo sobre o Pix",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Fornecedores",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const transparency = [
     {
         label: "Política de privacidade",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Política de compliance",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Política de segurança",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Contratos",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Relatórios financeiros",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Ética e compliance",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Dados abertos",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "SCR",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Convenção de boletos",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const ombudsman = [
     {
         label: "0800 887 0463",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "ouvidoria@nearbank.com.br",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Atendimento das 9h às 18h (dias úteis)",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const talkToUs = [
     {
         label: "0800 608 6236",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "meajuda@nearbank.com.br",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Atendimento 24h",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
 const ourAgencies = [
     {
         label: "Brasília",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "São Paulo",
-        url: "/Index",
+        url: "#routeOrID",
     },
     {
         label: "Rio de Janeiro",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Florianópolis",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Belo Horizonte",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Curitiba",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Porto Alegre",
-        url: "/Index",
+        url: "#routeOrID",
     },
 
     {
         label: "Ver mais",
-        url: "/Index",
+        url: "#routeOrID",
     },
 ];
 
@@ -305,10 +306,10 @@ function FooterLinks() {
                     {/* lista Agencias */}
 
                     <h3>Nossas Agências</h3>
-                    <h5>
+                    <h6>
                         Somos um banco digital mas também contamos com algumas agências
                         confira abaixo a lista das cidades.
-                    </h5>
+                    </h6>
                     <ul>
                         {ourAgencies.map(link => (
                             <li key={link.label}>
