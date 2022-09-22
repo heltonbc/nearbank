@@ -26,7 +26,7 @@ const AccountPayments = () => (
                             <Form.Check
                                 type="radio"
                                 id="credit"
-                                className="ml-4"
+                                className="ms-4"
                                 label="Cartão de Crédito"
                                 name="paymentType"
                             />

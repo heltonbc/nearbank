@@ -83,9 +83,58 @@ const Dashboard = ({ className = false, name, account }) => {
 
             { date: "20/07", description: "SORVETERIA 74874", value: "100,00" },
         ],
+
+        history: [
+            {
+                date: "17/07",
+                description: "SAQUE 24H 012345",
+                value: "200,00",
+                saldo: "",
+            },
+            { date: "17/07", description: "SALDO DO DIA", value: "", saldo: "2.780,00" },
+            {
+                date: "19/07",
+                description: "ESTACIONAMENTO 123234",
+                value: "12,00",
+                saldo: "",
+            },
+            {
+                date: "19/07",
+                description: "COMPRA INTERNET 123432",
+                value: "450,00",
+                saldo: "",
+            },
+            { date: "19/07", description: "SALDO DO DIA", value: "", saldo: "2.318,00" },
+            {
+                date: "21/07",
+                description: "SUPERMERCADO 2312332",
+                value: "275,90",
+                saldo: "",
+            },
+            {
+                date: "21/07",
+                description: "ESTACIONAMENTO 123234",
+                value: "12,00",
+                saldo: "",
+            },
+            { date: "21/07", description: "SHOPPING 123432", value: "180,00", saldo: "" },
+            { date: "21/07", description: "SAQUE DO DIA", value: "", saldo: "1.851,00" },
+            {
+                date: "22/07",
+                description: "SUPERMERCADO 2312332",
+                value: "275,90",
+                saldo: "",
+            },
+            {
+                date: "22/07",
+                description: "DEPÓSITO 123234",
+                value: "1.000,00",
+                saldo: "",
+            },
+            { date: "22/07", description: "SALDO DO DIA", value: "", saldo: "2.576,00" },
+        ],
     };
     return (
-        /* Controla todas as colunas */
         <Container className="py-5">
             <Row className="center">
                 <Col xs={12} sm={6} md={6} lg={3} className="pt-4">

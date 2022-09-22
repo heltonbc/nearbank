@@ -34,14 +34,33 @@ const AccountModal = ({ show, handleClose, auth }) => {
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Label className="my-1 mr-2" htmlFor="formCitySelect">
-                            Preference
+                        <Form.Label className="my-1" htmlFor="formCitySelect">
+                            Sua cidade
                         </Form.Label>
                         <Form.Control as="select" className="my-1 mr-sm-2" custom="true">
                             <option value="0">Florianópolis - SC</option>
                             <option value="1">Curitiba - PR</option>
                             <option value="2">São Paulo - SP</option>
                             <option value="3">Rio de Janeiro - RJ</option>
+                            <option value="4">Brasília - DF</option>
+                            <option value="5">Fortaleza - CE</option>
+                            <option value="6">Manaus - AM</option>
+                            <option value="7">Recife - PE</option>
+                            <option value="8">Porto Alegre - RS</option>
+                            <option value="9">Belém - PA</option>
+                            <option value="10">João Pessoa - PB</option>
+                            <option value="11">Macapá - AP</option>
+                            <option value="12">Rio Branco - AC</option>
+                            <option value="13">Palmas - TO</option>
+                            <option value="14">Aracaju - SE</option>
+                            <option value="15">São Luís - MA</option>
+                            <option value="16">Teresina - PI</option>
+                            <option value="17">Goiânia - GO</option>
+                            <option value="18">Campo Grande - MS</option>
+                            <option value="19">Cuiabá - MT</option>
+                            <option value="20">Salvador - BA</option>
+                            <option value="21">Belo Horizonte - MG</option>
+                            <option value="22">Vitória - ES</option>
                         </Form.Control>
                     </Form.Group>
 

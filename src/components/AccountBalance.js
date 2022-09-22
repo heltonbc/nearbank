@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Button, Tabs, Tab, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./AccountBalance.scss";
 
 const AccountBalance = ({ data }) => {
@@ -23,7 +24,10 @@ const AccountBalance = ({ data }) => {
                 </h6>
                 <p className="mb-0">Limite disponível</p>
                 <p className="mb-4">R$ 5.000,00</p>
-                <Button variant="secondary">Ver extrato</Button>
+
+                <Link to="/history">
+                    <Button variant="secondary">Ver extrato</Button>
+                </Link>
             </Col>
             <Col xs={12} sm={12} md={12} lg={6} className="mt-lg-5 pt-lg-5">
                 <Tabs className="mt-5 pt-lg-5" defaultActiveKey="latest">
