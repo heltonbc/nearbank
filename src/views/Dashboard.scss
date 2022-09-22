@@ -1,10 +1,6 @@
 @import "../variables";
 
 .dashboard {
-    @media screen and (min-width: 992px) {
-        min-height: calc(100vh - 12.25rem);
-    }
-
     &__user-avatar {
         position: relative;
     }
@@ -58,4 +54,10 @@ a.dashboard__link:active,
 a.dashboard__link:focus,
 a.dashboard__link:hover {
     text-decoration: none;
+}
+
+.center {
+    @media screen and (max-width: 575px) {
+        text-align: center !important;
+    }
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import { Col, Button, Tabs, Tab, Table } from "react-bootstrap";
+import "./AccountBalance.scss";
 
 const AccountBalance = ({ data }) => {
     const { latestBalance, futureBalance } = data;
     return (
         <>
-            <Col xs={12} lg={3} className="mt-lg-5 pt-lg-4">
+            <Col xs={12} sm={6} md={6} lg={3} className="mt-lg-5 pt-lg-4">
                 <h3 className="my-5">Conta Corrente</h3>
                 <h6>
                     <small>
@@ -24,9 +25,9 @@ const AccountBalance = ({ data }) => {
                 <p className="mb-4">R$ 5.000,00</p>
                 <Button variant="secondary">Ver extrato</Button>
             </Col>
-            <Col xs={12} lg={5} className="mt-lg-5 pt-lg-5">
+            <Col xs={12} sm={12} md={12} lg={6} className="mt-lg-5 pt-lg-5">
                 <Tabs className="mt-5 pt-lg-5" defaultActiveKey="latest">
-                    <Tab eventKey="latest" title="Últimos Lançamentos">
+                    <Tab className="scroll" eventKey="latest" title="Últimos Lançamentos">
                         <Table striped borderless>
                             <thead>
                                 <tr>
@@ -48,7 +49,7 @@ const AccountBalance = ({ data }) => {
                             </tbody>
                         </Table>
                     </Tab>
-                    <Tab eventKey="future" title="Lançamentos Futuros">
+                    <Tab className="scroll" eventKey="future" title="Lançamentos Futuros">
                         <Table striped borderless>
                             <thead>
                                 <tr>
