@@ -14,7 +14,7 @@ const Dashboard = ({ className = false, name, account }) => {
     const [activeLink, setActiveLink] = useState(0);
 
     const links = [
-        { text: "Minha conta", path: "/*", exact: true },
+        { text: "Minha conta", path: "/dashboard", exact: true },
         { text: "Pagamentos", path: "payments" },
         { text: "Extrato", path: "history" },
     ];
@@ -89,49 +89,57 @@ const Dashboard = ({ className = false, name, account }) => {
                 date: "17/07",
                 description: "SAQUE 24H 012345",
                 value: "200,00",
-                saldo: "",
+                saldo: "6.500,00",
             },
-            { date: "17/07", description: "SALDO DO DIA", value: "", saldo: "2.780,00" },
+
             {
                 date: "19/07",
                 description: "ESTACIONAMENTO 123234",
                 value: "12,00",
-                saldo: "",
+                saldo: "6.288,00",
             },
             {
                 date: "19/07",
-                description: "COMPRA INTERNET 123432",
+                description: "LIVRARIA 123234",
                 value: "450,00",
-                saldo: "",
+                saldo: "5.838,00",
             },
-            { date: "19/07", description: "SALDO DO DIA", value: "", saldo: "2.318,00" },
             {
                 date: "21/07",
                 description: "SUPERMERCADO 2312332",
                 value: "275,90",
-                saldo: "",
+                saldo: "5.562,10",
             },
             {
                 date: "21/07",
                 description: "ESTACIONAMENTO 123234",
                 value: "12,00",
-                saldo: "",
+                saldo: "5.550,10",
             },
-            { date: "21/07", description: "SHOPPING 123432", value: "180,00", saldo: "" },
-            { date: "21/07", description: "SAQUE DO DIA", value: "", saldo: "1.851,00" },
+            {
+                date: "21/07",
+                description: "SHOPPING 123432",
+                value: "380,00",
+                saldo: "5.170,10",
+            },
+            {
+                date: "21/07",
+                description: "CHURRASCARIA 123432",
+                value: "180,00",
+                saldo: "5.170,10",
+            },
             {
                 date: "22/07",
                 description: "SUPERMERCADO 2312332",
                 value: "275,90",
-                saldo: "",
+                saldo: "5.562,10",
             },
             {
                 date: "22/07",
                 description: "DEPÓSITO 123234",
                 value: "1.000,00",
-                saldo: "",
+                saldo: "6.562,10",
             },
-            { date: "22/07", description: "SALDO DO DIA", value: "", saldo: "2.576,00" },
         ],
     };
     return (
@@ -165,7 +173,7 @@ const Dashboard = ({ className = false, name, account }) => {
                         {links.map(({ text, path }, key) => (
                             <Link className="dashboard__link" to={path} key={key}>
                                 <Button
-                                    className={`dashboard__button text-left ${
+                                    className={`dashboard__button text-start w-100 ${
                                         key === activeLink
                                             ? "dashboard__button--active"
                                             : ""

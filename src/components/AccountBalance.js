@@ -25,8 +25,10 @@ const AccountBalance = ({ data }) => {
                 <p className="mb-0">Limite disponível</p>
                 <p className="mb-4">R$ 5.000,00</p>
 
-                <Link to="/history">
-                    <Button variant="secondary">Ver extrato</Button>
+                <Link to="/dashboard/history">
+                    <Button variant="success" className="btn-color">
+                        Ver extrato
+                    </Button>
                 </Link>
             </Col>
             <Col xs={12} sm={12} md={12} lg={6} className="mt-lg-5 pt-lg-5">

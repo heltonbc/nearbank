@@ -38,8 +38,8 @@ const AccountModal = ({ show, handleClose, auth }) => {
                             Sua cidade
                         </Form.Label>
                         <Form.Control as="select" className="my-1 mr-sm-2" custom="true">
-                            <option value="0">Florianópolis - SC</option>
-                            <option value="1">Curitiba - PR</option>
+                            <option value="0">Curitiba - PR</option>
+                            <option value="1">Florianópolis - SC</option>
                             <option value="2">São Paulo - SP</option>
                             <option value="3">Rio de Janeiro - RJ</option>
                             <option value="4">Brasília - DF</option>
@@ -73,14 +73,10 @@ const AccountModal = ({ show, handleClose, auth }) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose} className="buttoncolor">
+                <Button variant="success" onClick={handleClose} className="btn-color">
                     Cancelar
                 </Button>
-                <Button
-                    variant="secondary"
-                    onClick={handleSubmit}
-                    className="buttoncolor"
-                >
+                <Button variant="success" onClick={handleSubmit} className="btn-color">
                     Criar Conta
                 </Button>
             </Modal.Footer>
