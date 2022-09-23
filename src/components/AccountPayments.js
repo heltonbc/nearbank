@@ -18,7 +18,7 @@ const AccountPayments = () => (
             <Tab eventKey="pix" title="Pix">
                 <Form>
                     <Form.Group controlId="formBarCode" className="my-5">
-                        <Form.Label>
+                        <Form.Label className="mb-4">
                             Digite a chave Pix <img src={pixmini} alt="pixmini" />{" "}
                         </Form.Label>
                         <Form.Control type="number" placeholder="Digite a chave Pix" />
@@ -91,7 +91,7 @@ const AccountPayments = () => (
             <Tab eventKey="boleto" title="Boleto">
                 <Form>
                     <Form.Group controlId="formBarCode" className="my-5">
-                        <Form.Label>
+                        <Form.Label className="mb-4">
                             Código de barras <img src={barcodeicon} alt="barcodeicon" />{" "}
                         </Form.Label>
                         <Form.Control
@@ -123,9 +123,12 @@ const AccountPayments = () => (
                 </Form>
             </Tab>
             <Tab eventKey="transfer" title="Transferência">
-                <Form className="mt-5 py-3">
-                    <img src={transfer} alt="transfer" width="70px" height="70px" />{" "}
-                    <Row className="mt-4">
+                <Form className="mt-4 py-4">
+                    <Row>
+                        <Form.Label className="mb-5">
+                            Transferência Bancária entre contas{" "}
+                            <img src={transfer} alt="barcodeicon" />{" "}
+                        </Form.Label>
                         <Col xs={11} lg={4}>
                             <Form.Group className="mb-3">
                                 <Form.Label>Banco</Form.Label>
