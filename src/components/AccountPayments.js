@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPix } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import { Col, Button, Tabs, Tab, Form, Row, Card } from "react-bootstrap";
 import "./AccountModal.scss";
+import "./AccountPayments.scss";
 import barcodeicon from "../assets/icons/barcodeicon.svg";
 import deposit from "../assets/icons/deposit.svg";
 import receive from "../assets/icons/receive.svg";
@@ -25,7 +24,7 @@ const AccountPayments = () => (
                         <Form.Control type="number" placeholder="Digite a chave Pix" />
                     </Form.Group>
                     <Form.Group controlId="pix" className="mb-5">
-                        <Row>
+                        <Col>
                             <Row>
                                 <Card.Title>Enviar</Card.Title>
 
@@ -64,7 +63,7 @@ const AccountPayments = () => (
                                     />
                                 </Link>
                             </Row>
-                        </Row>
+                        </Col>
 
                         <Form.Label>Forma de Pagamento</Form.Label>
                         <div className="d-flex">

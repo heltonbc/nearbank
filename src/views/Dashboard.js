@@ -142,7 +142,7 @@ const Dashboard = ({ className = false, name, account }) => {
         ],
     };
     return (
-        <Container className="py-5">
+        <Container className="dashboard py-5">
             <Row className="center">
                 <Col xs={12} sm={6} md={6} lg={3} className="pt-4">
                     <Col>
@@ -168,7 +168,7 @@ const Dashboard = ({ className = false, name, account }) => {
                         </Row>
                     </Col>
 
-                    <Col className="d-grid">
+                    <Col>
                         {links.map(({ text, path }, key) => (
                             <Link className="dashboard__link" to={path} key={key}>
                                 <Button

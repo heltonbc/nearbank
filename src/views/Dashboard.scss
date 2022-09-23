@@ -27,25 +27,25 @@
         &:hover,
         &--active,
         &--active:hover {
-            color: #fff;
+            color: #fff !important;
         }
 
         &:hover {
-            background-color: $color-muted;
+            background-color: $color-muted !important;
         }
 
         &--active,
         &--active:hover {
-            background-color: $color-CF7500;
+            background-color: $color-CF7500 !important;
         }
     }
 
     a.nav-item.nav-link {
-        color: $color-primary;
+        color: $color-primary !important;
     }
 
     a.nav-item.nav-link.active {
-        color: $color-muted;
+        color: $color-muted !important;
     }
 }
 
@@ -60,4 +60,8 @@ a.dashboard__link:hover {
     @media screen and (max-width: 575px) {
         text-align: center !important;
     }
+}
+
+.col {
+    justify-content: center;
 }
