@@ -20,7 +20,7 @@ const Login = ({ text, auth }) => {
                     <Row xs={12} lg={12}>
                         <Image src={logo} className="mb-5" />
                     </Row>
-                    <Form>
+                    <Form className="vh">
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label className="lead">
                                 <strong>Nome e Sobrenome</strong>
