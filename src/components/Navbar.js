@@ -84,11 +84,11 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
                                         title="Acessar minha conta"
                                         id="basic-nav-dropdown"
                                     >
-                                        <Nav.Link as={Link} to="/login">
+                                        <Nav.Link className="ms-2" as={Link} to="/login">
                                             Pessoa Física
                                         </Nav.Link>
                                         <NavDropdown.Divider />
-                                        <Nav.Link as={Link} to="/login">
+                                        <Nav.Link className="ms-2" as={Link} to="/login">
                                             Pessoa Jurídica
                                         </Nav.Link>
                                     </NavDropdown>

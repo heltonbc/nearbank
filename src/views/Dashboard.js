@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faUser } from "@fortawesome/free-solid-svg-icons";
-
 import "./Dashboard.scss";
 
 import AccountBalance from "../components/AccountBalance";
@@ -24,7 +23,7 @@ const Dashboard = ({ className = false, name, account }) => {
             { date: "12/07", description: "SAQUE 24H 012345", value: "300,00" },
             { date: "14/07", description: "MERCADO 02323626", value: "275,00" },
             { date: "14/07", description: "NETFLIX 235236", value: "59,00" },
-            { date: "15/07", description: "NETFLIX 235236", value: "59,00" },
+            { date: "15/07", description: "LIVRARIA 123236", value: "59,00" },
             { date: "15/07", description: "SUPERMERCADO 48534", value: "200,00" },
 
             { date: "15/07", description: "PADARIA 54874", value: "150,00" },
@@ -56,7 +55,7 @@ const Dashboard = ({ className = false, name, account }) => {
             { date: "12/07", description: "POSTO COMBUSTÍVEL", value: "200,00" },
             { date: "13/07", description: "SAQUE 24H 012345", value: "300,00" },
             { date: "14/07", description: "MERCADO 02323626", value: "275,00" },
-            { date: "15/07", description: "NETFLIX 235236", value: "59,00" },
+            { date: "15/07", description: "LIVRARIA 354236", value: "59,00" },
             { date: "15/07", description: "SUPERMERCADO 48534", value: "200,00" },
 
             { date: "15/07", description: "PADARIA 54874", value: "150,00" },
