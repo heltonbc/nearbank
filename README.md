@@ -1,4 +1,4 @@
-Link projeto: https://nearbank.vercel.app/
+Link do projeto: https://nearbank.vercel.app/
 
 # Getting Started with Create React App
 
