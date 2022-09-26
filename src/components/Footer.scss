@@ -13,6 +13,7 @@
     margin-right: 0.5rem !important;
 }
 
+/* efeito para os botões na versão desktop */
 .jump:hover :hover {
     filter: alpha(opacity=50); /* For IE8 and earlier */
     -webkit-transform: translateY(-10px);

@@ -19,7 +19,7 @@ const CreditCard = () => (
             <Col xs={12} lg={12} className="mb-5 mb-lg-0 px-5 px-lg-0">
                 <Row>
                     <h2 className="my-5 credit-card-title">
-                        <strong>Cartão de crédito e Débido</strong>
+                        <strong>Cartão de crédito e Débito</strong>
                     </h2>
                 </Row>
                 <Row className="hovereffect">
