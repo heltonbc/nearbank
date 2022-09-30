@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Modal, Form, Button } from "react-bootstrap";
-/*  */
+
 const AccountModal = ({ show, handleClose, auth }) => {
     const navigate = useNavigate();
     const [name, setName] = useState();
