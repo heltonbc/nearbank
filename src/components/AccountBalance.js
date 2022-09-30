@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Button, Tabs, Tab, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./AccountBalance.scss";
-
+/*  */
 const AccountBalance = ({ data }) => {
     const { latestBalance, futureBalance } = data;
     return (

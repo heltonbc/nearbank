@@ -10,7 +10,7 @@ import pixmini from "../assets/icons/pixmini.svg";
 import qrcode from "../assets/icons/qrcode.svg";
 import transfer from "../assets/icons/transfer.svg";
 import { Link } from "react-router-dom";
-
+/*  */
 const AccountPayments = () => (
     <Col xs={12} lg={8} className="mt-lg-5 pt-lg-5">
         <h3 className="mt-4">Pagamentos</h3>
