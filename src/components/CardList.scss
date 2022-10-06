@@ -11,6 +11,7 @@ button:hover {
     animation-fill-mode: both;
 }
 
+/* Efeito jump nos botões */
 @keyframes jump {
     0% {
         transform: translate(0, 0);
