@@ -9,6 +9,8 @@ import AccountBalance from "../components/AccountBalance";
 import AccountPayments from "../components/AccountPayments";
 import AccountHistory from "../components/AccountHistory";
 
+// ----------------------------------------------------------
+
 const Dashboard = ({ className = false, name, account }) => {
     const [activeLink, setActiveLink] = useState(0);
 
@@ -141,6 +143,9 @@ const Dashboard = ({ className = false, name, account }) => {
             },
         ],
     };
+
+    // ----------------------------------------------------------
+
     return (
         <Container className="dashboard py-5">
             <Row className="center">

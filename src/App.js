@@ -9,6 +9,8 @@ import Home from "./views/Home";
 import Login from "./views/Login";
 import Dashboard from "./views/Dashboard";
 
+// ----------------------------------------------------------
+
 document.body.style.backgroundColor = "#F4F4F4";
 
 const App = () => {
@@ -37,6 +39,8 @@ const App = () => {
             <Navigate to="/login" />
         );
     };
+
+    // ----------------------------------------------------------
 
     return (
         <div className="App">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Modal, Form, Button } from "react-bootstrap";
+// ----------------------------------------------------------
 
 const AccountModal = ({ show, handleClose, auth }) => {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const AccountModal = ({ show, handleClose, auth }) => {
         auth.login(name, "12345", navigate("/dashboard"));
         handleClose();
     };
-
+    // ----------------------------------------------------------
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>

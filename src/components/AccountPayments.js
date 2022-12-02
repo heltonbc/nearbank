@@ -1,7 +1,9 @@
 import React from "react";
 import { Col, Button, Tabs, Tab, Form, Row, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./AccountModal.scss";
 import "./AccountPayments.scss";
+
 import barcodeicon from "../assets/icons/barcodeicon.svg";
 import deposit from "../assets/icons/deposit.svg";
 import receive from "../assets/icons/receive.svg";
@@ -9,7 +11,8 @@ import pixcopypaste from "../assets/icons/pixcopypaste.svg";
 import pixmini from "../assets/icons/pixmini.svg";
 import qrcode from "../assets/icons/qrcode.svg";
 import transfer from "../assets/icons/transfer.svg";
-import { Link } from "react-router-dom";
+
+// ----------------------------------------------------------
 
 const AccountPayments = () => (
     <Col xs={12} lg={8} className="mt-lg-5 pt-lg-5">

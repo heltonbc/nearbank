@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Table } from "react-bootstrap";
 import "./AccountBalance.scss";
 
+// ----------------------------------------------------------
+
 const AccountHistory = ({ data }) => {
     const { history } = data;
 
